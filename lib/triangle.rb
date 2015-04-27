@@ -1,4 +1,4 @@
-class Triangle 
+class Triangle
   define_method(:initialize) do |side1, side2, side3|
     @side1 = side1
     @side2 = side2
@@ -6,6 +6,10 @@ class Triangle
   end
 
   define_method(:triangle?) do
-    false
+    if @side1.>(@side2.+(@side3))||@side2.>(@side1.+(@side3))||@side3.>(@side1.+(@side2))
+      "This is not a triangle."
+    else
+      "This is a triangle."
+    end
   end
 end
