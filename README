@@ -1,0 +1,9 @@
+#Bermuda Triangle
+Created by Jess Engel and Franz Knupfer
+
+In this program, a user will input three values for the three sides of a triangle. This program will tell the user whether this forms a valid triangle, an equilateral triangle, an isoceles triangle or a scalene triangle.
+
+This folder includes all files needed to run this program in Sinatra or Heroku.
+
+copyright 2015
+license available to all
