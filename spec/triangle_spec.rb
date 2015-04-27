@@ -11,6 +11,14 @@ describe(Triangle) do
       test_triangle = Triangle.new(3, 3, 3)
       expect(test_triangle.triangle()).to(eq("This is an equilateral triangle."))
     end
+    it("returns whether or not it's an isoceles triangle") do
+      test_triangle = Triangle.new(3, 3, 2)
+      expect(test_triangle.triangle()).to(eq("This is an isoceles triangle."))
+    end
+    it("returns whether it's a scalene triangle") do
+      test_triangle = Triangle.new(3, 2, 1)
+      expect(test_triangle.triangle()).to(eq("This is a scalene triangle."))
+    end
   end
 end
 

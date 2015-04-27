@@ -10,8 +10,10 @@ class Triangle
       "This is not a triangle."
     elsif @side1==@side2 && @side1==@side3
       "This is an equilateral triangle."
+    elsif @side1==@side2 || @side1==@side3 || @side2==@side3
+      "This is an isoceles triangle."
     else
-      "okay"
+      "This is a scalene triangle."
     end
   end
 end
